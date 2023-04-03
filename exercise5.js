@@ -30,9 +30,10 @@ function mosaic(){
      B = random(150,225);
 
     strokeWeight(3);
+    Stroke(0);
     for(mx=width;mx>-size*widthMult;mx-=size){
         for(my=height;my>-size*heightMult;my-=size){
-            fill(random(R,R+50),random(G,G+25),random(B,B+75),random(30,100));
+            fill(random(R,R+50),random(G,G+25),random(B,B+75));
             rect(mx,my,size*floor(random(1,widthMult)),size*floor(random(1,heightMult)));
         }
         }
