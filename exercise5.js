@@ -23,7 +23,8 @@ function draw(){
  
 
 function mosaic(){
-    
+     if(mouseIsPressed===true){
+
      R = random(100,200);
      G = random(30,175);
      B = random(150,225);
@@ -33,7 +34,7 @@ function mosaic(){
         for(my=height;my>-size*heightMult;my-=size){
             fill(random(R,R+50),random(G,G+25),random(B,B+75),random(30,100));
             rect(mx,my,size*floor(random(1,widthMult)),size*floor(random(1,heightMult)));
-
+        }
         }
     }
 }
